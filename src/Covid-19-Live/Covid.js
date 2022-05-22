@@ -25,8 +25,10 @@ const Covid = () => {
 
     return (
         <>
+
             <section className='mainbg'>
-                <div className='container' style={{fontWeight:"bold"}}> 
+            <br />
+                <div className='container' style={{fontWeight:"bold",color:"white"}}> 
                     <h5 className='text-center'>🔴 LIVE</h5>
                     <h2 className='text-center'>COVID-13 CORONAVIRUS TRACKER</h2><br />
 

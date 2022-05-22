@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 const Routing = () => {
     return (
         <>
-         <Navbar /><br/>
+         <Navbar /> 
         <div> 
         <Routes>
             <Route path="/Covid" element={<Covid />}/> 
