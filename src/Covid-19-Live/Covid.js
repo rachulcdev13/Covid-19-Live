@@ -31,6 +31,7 @@ const Covid = () => {
                     <h5 className='text-center'>🔴 LIVE</h5>
                     <h2 className='text-center'>COVID-13 CORONAVIRUS TRACKER</h2><br />
 
+
                     <div className='cardmain'> 
                         <div className="row">
                         <div className="col-sm-3">
