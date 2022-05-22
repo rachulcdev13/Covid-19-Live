@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Covid.css"
 
 const Covid = () => {
-    const [data,setData]=useState();
+    const [data,setData]=useState([]);
     console.log(data);
     const getCovidData = async () => {
         try {
@@ -25,9 +25,8 @@ const Covid = () => {
 
     return (
         <>
-        <br /><br />
             <section className='mainbg'>
-                <div className='container' style={{color:"white",fontWeight:"bold"}}> 
+                <div className='container' style={{fontWeight:"bold"}}> 
                     <h5 className='text-center'>🔴 LIVE</h5>
                     <h2 className='text-center'>COVID-13 CORONAVIRUS TRACKER</h2><br />
 
@@ -47,8 +46,8 @@ const Covid = () => {
                                 <div className="card text-center bg-primary" style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}}>
                                     <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>RECOVERED</h5>
-                                        <h1 className='india'>31441260</h1>
-                                        {/* <h1 className='india'>{data.recovered}</h1> */}
+                                        {/* <h1 className='india'>31441260</h1> */}
+                                        <h1 className='india'>{data.recovered}</h1>
                                         <p>Updated</p>
                                     </div>
                                 </div>
@@ -57,7 +56,7 @@ const Covid = () => {
                                 <div className="card text-center bg-success"  style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}} > 
                                     <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>CONFIRMED</h5>
-                                        <h1 className='india'>32249900</h1>
+                                        <h1 className='india'>{data.confirmed}</h1>
                                         <p>Updated</p>
                                     </div>
                                 </div>
@@ -66,7 +65,7 @@ const Covid = () => {
                                 <div className="card text-center bg-danger" style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}} > 
                                      <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>DEATH</h5>
-                                        <h1 className='india'>432112</h1>
+                                        <h1 className='india'>{data.deaths}</h1>
                                         <p>Updated</p>
                                     </div>
                                 </div>
@@ -79,7 +78,7 @@ const Covid = () => {
                                 <div className="card text-center bg-warning"  style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}} > 
                                     <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>ACTIVE</h5>
-                                        <h1 className='india'>363849</h1>
+                                        <h1 className='india'>{data.active}</h1>
                                         <p>Updated</p>
                                     </div>
                                 </div>
@@ -88,7 +87,7 @@ const Covid = () => {
                                 <div className="card text-center bg-info" style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}}>
                                         <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>DELTA CONFIRMED</h5>
-                                        <h1 className='india'>24692</h1>
+                                        <h1 className='india'>{data.deltaconfirmed}</h1>
                                         <p>Updated</p>
                                     </div>
                                 </div>
@@ -97,7 +96,7 @@ const Covid = () => {
                                 <div className="card text-center bg-warning"  style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}} > 
                                     <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> TOTAL </span>DELTA DEATH</h5>
-                                        <h1 className='india'>438</h1>
+                                        <h1 className='india'>{data.deltadeaths}</h1>
                                         <p>Go somewhere</p>
                                     </div>
                                 </div>
@@ -106,7 +105,7 @@ const Covid = () => {
                                 <div className="card text-center bg-success"  style={{boxShadow:"0 10px 10px 0px rgba(0,0,0,0.2)"}} > 
                                     <div className="card-body">
                                         <h5 className="card-title"><span style={{ fontSize: "10px" }}> LAST </span>UPDATED</h5>
-                                        <h1 className='india'>13/08/2021 23:27:22</h1>
+                                        <h1 className='india'>{data.lastupdatedtime}</h1>
                                         {/* <p>Updated</p> */}
                                     </div>
                                 </div>
