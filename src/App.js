@@ -10,11 +10,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routing />
-      </BrowserRouter>
-      {/* <Covid /> */}
-      {/* <h1>COVID-13 CORONAVIRUS TRACKER</h1> */}
-      {/* <br /><br /> */}
-      {/* <Statewise /> */}
+      </BrowserRouter> 
     </>
   )
 }
