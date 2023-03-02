@@ -10,7 +10,7 @@ const Routing = () => {
          <Navbar /> 
         <div> 
         <Routes>
-            <Route path="/Covid" element={<Covid />}/> 
+            <Route path="/" element={<Covid />}/> 
             <Route path="/Statewise" element={<Statewise />}/> 
         </Routes>
         </div>
